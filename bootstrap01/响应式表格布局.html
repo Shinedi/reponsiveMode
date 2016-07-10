@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/holder.min.js"></script>
+</head>
+<body>
+<!--Bootstrap需要为页面内容和栅格系统包裹一个.container/.container-fluid容器-->
+<div class="container">
+    <!--.row设置负值margin抵消container元素设置的padding和行所包含的列的padding-->
+    <div class="row">
+        <!--内容应该放置于列内-->
+        <div class="col-md-1" style="background: aqua;">1</div>
+        <div class="col-md-1" style="background: mediumblue;">1</div>
+        <div class="col-md-1" style="background: blueviolet;">1</div>
+        <div class="col-md-1" style="background: chartreuse;">1</div>
+        <div class="col-md-1" style="background: goldenrod;">1</div>
+        <div class="col-md-1" style="background: aqua;">1</div>
+        <div class="col-md-1" style="background: mediumblue;">1</div>
+        <div class="col-md-1" style="background: blueviolet;">1</div>
+        <div class="col-md-1" style="background: chartreuse;">1</div>
+        <div class="col-md-1" style="background: goldenrod;">1</div>
+        <div class="col-md-1" style="background: aqua;">1</div>
+        <div class="col-md-1" style="background: mediumblue;">1</div>
+    </div>
+    <!--6+6+6=18>12，包含多余列的元素将作为一个整体单元另起一行排列-->
+    <div class="row" style="background: plum;">
+        <div class="col-md-6 ">1</div>
+        <div class="col-md-6">2</div>
+        <div class="col-md-6" style="background: pink;">3</div>
+    </div>
+    <!--手机、平板、桌面-->
+    <div class="row">
+        <div class="col-xs-11 col-sm-6 col-md-8" style="background: beige;">col-xs-12,col-sm-6,col-md-8</div>
+        <div class="col-xs-1 col-md-4">col-xs-6,col-md-4</div>
+    </div>
+    <!--嵌套列-->
+    <div class="row">
+        <div class="col-md-1" style="background: aqua;">
+            <div class="row">
+                <div class="col-sm-2">1</div>
+                <div class="col-sm-2">2</div>
+                <div class="col-sm-2">3</div>
+                <div class="col-sm-2">4</div>
+                <div class="col-sm-2">5</div>
+            </div>
+        </div>
+        <div class="col-md-1" style="background: mediumblue;">1</div>
+        <div class="col-md-1" style="background: blueviolet;">1</div>
+        <div class="col-md-1" style="background: chartreuse;">1</div>
+        <div class="col-md-1" style="background: goldenrod;">1</div>
+        <div class="col-md-1" style="background: aqua;">1</div>
+        <div class="col-md-1" style="background: mediumblue;">1</div>
+        <div class="col-md-1" style="background: blueviolet;">1</div>
+        <div class="col-md-1" style="background: chartreuse;">1</div>
+        <div class="col-md-1" style="background: goldenrod;">1</div>
+        <div class="col-md-1" style="background: aqua;">1</div>
+        <div class="col-md-1" style="background: mediumblue;">1</div>
+    </div>
+    <!--响应式列重置-->
+    <div class="row" style="background:lightgrey;">
+        <div class="col-xs-6 col-sm-6 col-md-6">col-md-6col-md-6col-md-6col-md-6col-md-6col-md-6col-md-6col-md-6col-md-6col-md-6col-md-6</div>
+        <div class="col-xs-6 col-sm-6 col-md-6" >col-md-6</div>
+        <div class=" clearfix visible-xs-block visible-sm-block "></div>
+        <div class="col-xs-6 col-sm-6 col-md-6" style="background: cornflowerblue;">1</div>
+        <div class="col-xs-6 col-sm-6 col-md-6" style="background: cornflowerblue;">2</div>
+    </div>
+</div>
+</body>
+</html>
